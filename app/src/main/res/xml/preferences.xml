@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Notifications">
+        <Preference
+            android:title="Notification Sound"
+            android:summary="Default (Skyline)" />
+        <SwitchPreference
+            android:title="Turn off all notifications"
+            android:summary="Mute all chats" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Teachable">
+        <Preference
+            android:title="About" />
+
+        <Preference
+            android:title="Report a bug" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Account Actions">
+        <Preference
+            android:title="Log Out" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

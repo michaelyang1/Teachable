@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1048557434212",
+    "firebase_url": "https://teachable-a4854.firebaseio.com",
+    "project_id": "teachable-a4854",
+    "storage_bucket": "teachable-a4854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048557434212:android:7ea0da051c16f4e886b671",
+        "android_client_info": {
+          "package_name": "com.example.teachable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048557434212-kn4vu7246gg8f3f2v3na9qs1bkmnchq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZHR_hyQWGziGdK4J18jJNaRcVYYMmEXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048557434212-kn4vu7246gg8f3f2v3na9qs1bkmnchq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

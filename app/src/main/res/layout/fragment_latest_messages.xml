@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_latest_messages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/holo_blue_dark">-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_latest_messages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/imageview_latest_message_toolbar"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        app:civ_border_width="1dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/toolbar"-->
+<!--        app:srcCompat="@drawable/googleg_standard_color_18" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageview_new_message_toolbar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:layout_marginRight="96dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/toolbar"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_edit" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageview_sign_out_toolbar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/toolbar"-->
+<!--        app:srcCompat="@android:drawable/ic_input_delete" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
