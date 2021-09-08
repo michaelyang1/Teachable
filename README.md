@@ -5,7 +5,8 @@ A peer to peer messenger application which allows students and teachers to direc
 ### Sidebar (Navigation drawer) 
 * Top open the sidebar, tap the hamburger icon on the top left corner or swipe right on the left edge of the app 
 * You can navigate to different pages by clicking on the numerous sidebar selection options 
-<img src="https://user-images.githubusercontent.com/60278399/132431561-c31d9617-b066-49c0-b5fa-83835c6fb8ad.jpg" width="100" height="100">
+![Screenshot_20210907-202223_Teachable](https://user-images.githubusercontent.com/60278399/132433167-6400d2b4-2f60-4876-a107-f4316abce7af.jpg)
+
 ### Chats page 
 * The "home" screen of the app 
 * By default, your latest messages are displayed, sorted by chronological order  
