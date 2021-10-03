@@ -19,7 +19,7 @@ A peer to peer messenger application which allows students and teachers to direc
   <img src="https://user-images.githubusercontent.com/60278399/135770473-abb2a483-2acb-4d9c-be11-c6b8763e6b2f.jpg" width="300px" height="600px"/>
 </p>
 
-### Chat log page 
+### Conversations page 
 * The full conversation between you and another user
 * The other user's messages will appear from the left while your's will populate from the right
 * Supports rich web link previews 
@@ -31,7 +31,7 @@ A peer to peer messenger application which allows students and teachers to direc
 
 ### Contacts page 
 * All your contacts and their profile images will display on this page 
-* Tapping on a contact opens a chat log with them
+* Tapping on a contact opens a conversation with them
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60278399/135770523-ab4f0b34-3ca7-4b2c-bb99-41ecb5fea76b.jpg" width="300px" height="600px"/>
