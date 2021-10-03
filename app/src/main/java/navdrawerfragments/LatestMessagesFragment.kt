@@ -129,7 +129,7 @@ class LatestMessagesFragment: Fragment() {
             }
 
             override fun onChildChanged(p0: DataSnapshot, p1: String?) {
-                view!!.recyclerview_latest_messages.clearAnimation()
+//                view!!.recyclerview_latest_messages.clearAnimation()
                 if (!transactionComplete) {
                     return
                 }

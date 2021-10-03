@@ -71,7 +71,7 @@ class NavHomeActivity : AppCompatActivity() {
         // set up navigation drawer ui
         nav_view.post {
             Glide.with(this).load(currentUser?.profileImageUrl).into(imageview_nav_header)
-            textview_nav_header.text = currentUser?.username
+            textview_nav_header.text = "Hi, " + currentUser?.username + "!"
             nav_view.setCheckedItem(R.id.nav_chats)
         }
         // add drawer listeners

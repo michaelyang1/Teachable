@@ -22,6 +22,7 @@
     <PreferenceCategory
         android:title="Account Actions">
         <Preference
+            android:key="LogOutPrefKey"
             android:title="Log Out" />
     </PreferenceCategory>
 
