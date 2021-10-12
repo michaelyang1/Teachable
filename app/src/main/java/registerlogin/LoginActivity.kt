@@ -19,7 +19,10 @@ class LoginActivity : AppCompatActivity() {
             performLogin()
         }
 
-        back_to_register_textview.setOnClickListener { finish() }
+        back_to_register_textview.setOnClickListener {
+            intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun performLogin() {
@@ -41,5 +44,12 @@ class LoginActivity : AppCompatActivity() {
             .addOnFailureListener {
                 Log.e("Main", "Login Failure ${it.message}")
             }
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(Intent.ACTION_MAIN)
+        intent.addCategory(Intent.CATEGORY_HOME)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
     }
 }

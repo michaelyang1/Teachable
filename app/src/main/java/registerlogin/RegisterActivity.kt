@@ -96,10 +96,11 @@ class RegisterActivity : AppCompatActivity() {
 
         val fileName = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().getReference("/image/$fileName")
+        val email = email_edittext_register.text.toString()
         ref.putFile(selectedPhotoUri!!)
             .addOnSuccessListener {
                 ref.downloadUrl.addOnSuccessListener {
-                    saveUserToFirebaseDatabase(it.toString())
+                    saveUserToFirebaseDatabase(it.toString(), email)
                 }
             }
             .addOnFailureListener {
@@ -109,20 +110,20 @@ class RegisterActivity : AppCompatActivity() {
         Log.e("Will this actually work", ref.child("/image/$fileName").toString())
     }
 
-    private fun saveUserToFirebaseDatabase(profileImageUrl: String) {
+    private fun saveUserToFirebaseDatabase(profileImageUrl: String, email: String) {
         val uid = FirebaseAuth.getInstance().uid ?: "" //elvis operator
         val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
         val user = User(
             uid,
             username_edittext_register.text.toString(),
-            profileImageUrl
+            profileImageUrl,
+            email
         )
 
         ref.setValue(user)
             .addOnSuccessListener {
                 Log.e("RegisterActivity", "Added user to Firebase Database")
-
 
                 val intent = Intent(this, NavHomeActivity::class.java)
                 //clear off previous activities on activities stack

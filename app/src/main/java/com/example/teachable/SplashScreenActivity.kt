@@ -7,6 +7,7 @@ import android.os.Handler
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import messages.NavHomeActivity
+import registerlogin.LoginActivity
 import registerlogin.RegisterActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class SplashScreenActivity : AppCompatActivity() {
         val uid = FirebaseAuth.getInstance().uid
         lateinit var intent: Intent
         if (uid == null) {
-            intent = Intent(this, RegisterActivity::class.java)
+            intent = Intent(this, LoginActivity::class.java)
             Log.e("TAG", "User is not logged in")
         }
         else {

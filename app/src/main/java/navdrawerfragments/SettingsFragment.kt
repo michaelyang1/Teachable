@@ -8,6 +8,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.example.teachable.R
 import com.google.firebase.auth.FirebaseAuth
+import registerlogin.LoginActivity
 import registerlogin.RegisterActivity
 
 class SettingsFragment: PreferenceFragmentCompat() {
@@ -19,7 +20,7 @@ class SettingsFragment: PreferenceFragmentCompat() {
         val logOutPref = findPreference<Preference>("LogOutPrefKey")
         logOutPref?.setOnPreferenceClickListener {
             FirebaseAuth.getInstance().signOut()
-            val intent = Intent(context, RegisterActivity::class.java)
+            val intent = Intent(context, LoginActivity::class.java)
             startActivity(intent)
             return@setOnPreferenceClickListener true
         }

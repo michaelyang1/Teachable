@@ -92,6 +92,7 @@ class LatestMessagesFragment: Fragment() {
                         val chatMessage = it.getValue(ChatMessage::class.java)
                         refresh(-1, chatMessage!!)
                         Log.e("LatestMessages", chatMessage.text)
+                        Log.e("LatestMessages", chatMessage.fromId)
                     }
                 }
             }
