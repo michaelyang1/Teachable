@@ -12,15 +12,15 @@ A peer to peer messenger application which allows students and teachers to direc
 
 ### Chats page 
 * The "home" screen of the app 
-* By default, your latest messages are displayed, sorted by chronological order  
+* By default, your latest messages are displayed, sorted by chronological order (newest first)
 * Upon tapping a message row, the entire chat log will be displayed between that specific user
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60278399/135770473-abb2a483-2acb-4d9c-be11-c6b8763e6b2f.jpg" width="300px" height="600px"/>
 </p>
 
-### Chat log page 
-* The full converesation between you and another user
+### Conversations page 
+* The full conversation between you and another user
 * The other user's messages will appear from the left while your's will populate from the right
 * Supports rich web link previews 
 
@@ -31,14 +31,14 @@ A peer to peer messenger application which allows students and teachers to direc
 
 ### Contacts page 
 * All your contacts and their profile images will display on this page 
-* Tapping on a contact brings you to the chat log with them 
+* Tapping on a contact opens a conversation with them
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60278399/135770523-ab4f0b34-3ca7-4b2c-bb99-41ecb5fea76b.jpg" width="300px" height="600px"/>
 </p>
 
 ### Settings page 
-* Stores all the configurable app settings
+* Stores the app's configurable settings
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60278399/135770534-73878fb3-2d7c-46dd-b4c6-88e3896e93a7.jpg" width="300px" height="600px"/>
